@@ -21,7 +21,7 @@
                     <div class="phone_logo_container">
                         <img class="call_logo" src="assets/call_icon.png"/>
                     </div>
-                    <a href="tel:87073240078" class="phone_number">
+                    <a style="text-decoration: none;color: #191919;cursor: pointer;" href="tel:87073240078" class="phone_number">
                         8 (707) 324 00 78
                     </a>
                 </div>
@@ -29,7 +29,7 @@
                     <div class="phone_logo_container">
                         <img class="call_logo" src="assets/whatsapp_logo.png"/>
                     </div>
-                    <div class="phone_number">
+                    <div onclick="goTo()" style="text-decoration: none;color: #191919;cursor: pointer;" class="phone_number">
                         8 (707) 324 00 78
                     </div>
                 </div>
@@ -317,6 +317,13 @@
           </div>
     
     </div>
+    <script>
+         function goTo(){
+            var x = document.getElementById("phoneNum");
+            // let href = "https://api.whatsapp.com/send?phone="+x.value+"&text=Добрый день!Это Диана, Ваш менеджер по автострахованию с сайта qasco.kz . В случае оформления можете обратиться к нам, чтобы мы подобрали самый выгодный для Вас вариант, с учетом скидок и подарков 😊"
+            window.open(`https://wa.me/${x.value}`, '_blank');
+        }
+    </script>
 </body>
 <script src="js/script1.js"></script>
 <script src="js/script2.js"></script>
