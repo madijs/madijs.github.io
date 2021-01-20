@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <title>Document</title>
+</head>
+<body class="container">
+    <header>
+        <div class="header_container">
+            <div class="logo_container">
+                <img class="logo" src="assets/logo.png"/>
+            </div>
+            <div class="header_address">
+                Казахстан, 050031,г. Алматы, ул.Толе би, уг. Яссауи ТЦ Car City 2 бутик №0
+            </div>
+            <div class="contacts">
+                <div class="phone_call_container">
+                    <div class="phone_logo_container">
+                        <img class="call_logo" src="assets/call_icon.png"/>
+                    </div>
+                    <a href="tel:87073240078" class="phone_number">
+                        8 (707) 324 00 78
+                    </a>
+                </div>
+                <div class="phone_call_container">
+                    <div class="phone_logo_container">
+                        <img class="call_logo" src="assets/whatsapp_logo.png"/>
+                    </div>
+                    <div class="phone_number">
+                        8 (707) 324 00 78
+                    </div>
+                </div>
+            </div>
+            <div onclick="klikaj()" class="header_links">
+                <!-- <div>Наши продукты</div> -->
+                <div>На карте</div>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="priority">
+        <div class="priority_title">Почему мы?</div>
+        <div class="priority_container">
+            <div class="priority_bloc">
+                <img style="width: 80px;height: 75px;" src="assets/price.png" alt="price">
+                <div class="priority_bloc_title">
+                    Цена
+                </div>
+            </div>
+            <div class="priority_bloc">
+                <img style="width: 70px;height: 70px;" src="assets/quality.png" alt="price">
+            </div>
+        </div>
+    </div> -->
+    <div class="content">
+        <div class="content_titles">
+            <div class="content_container">
+                <div class="content_title">
+                        <div class="product_img">
+                            <img src="assets/avtoup.png"/>
+                        </div>
+                        <div class="product_title">
+                            Автоподъемники
+                        </div>
+                </div>
+                <div class="content_title">
+                    <div class="product_img">
+                        <img src="assets/carcolor.png"/>
+                    </div>
+                    <div class="product_title">
+                        Покрасочная камера
+                    </div>
+                </div>
+                <div class="content_title">
+                    <div class="product_img">
+                        <img src="assets/scanner.png"/>
+                    </div>
+                    <div class="product_title">
+                        Сканеры
+                    </div>
+                </div>
+                <div class="content_title">
+                    <div class="product_img">
+                        <img src="assets/image6.png"/>
+                    </div>
+                    <div class="product_title">
+                        Балансировочное оборудование
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="first_slider_container">
+            <div class="first_slider_title">Автоподъемники</div>
+            <div class="slider">
+                <div class="slider__wrapper">
+                  <div class="slider__item">
+                      <div id="item1" class="slider_it">
+                      <div class="slider__item_img">
+                          <img class="slider__item_img_logo" src="assets/image1.jpg" alt="image1">
+                      </div>
+                        <div class="slider_title">
+                            Launch tlt-240 4.0т
+                            220V-380V 1 год гарантии
+                        </div>
+                        <div class="slider_description">
+                            Грузоподъёмность: – 4.0 тонны
+                            Время подъёма на максимальную
+                            высоту: 50 сек
+                            Время опускания: 40 сек
+                            Высота: 3 840 мм
+                            Высота подъема: 1880 мм
+                            Ширина проёма для проезда а/м:
+                            2486мм
+                            Минимальная высота подхватов от
+                            пола: 110 мм
+                            Автоподъемники в цветах: красный,
+                            голубой, серый.
+                        </div>
+                        <div class="price">
+                            от 315 000 тенге
+                        </div>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div id="item2" class="slider_it">
+                    <div class="slider__item_img">
+                        <img class="slider__item_img_logo" src="assets/image2.jpg" alt="image1">
+                    </div>
+                  <div class="slider_title">
+                      Launch 2222tlt-240 4.0т
+                      220V-380V 1 год гарантии
+                  </div>
+                  <div class="slider_description">
+                    Грузоподъёмность: – 4.0 тонны
+                    Время подъёма на максимальную
+                    высоту: 50 сек
+                    Время опускания: 40 сек
+                    Высота: 3 840 мм
+                    Высота подъема: 1880 мм
+                    Ширина проёма для проезда а/м:
+                    2486мм
+                    Минимальная высота подхватов от
+                    пола: 110 мм
+                    Автоподъемники в цветах: красный,
+                    голубой, серый.
+                </div>
+                  <div class="price">
+                    от 315 000 тенге
+                </div>
+                  </div>
+                  </div>
+                  <div class="slider__item">
+                    <div id="item3" class="slider_it">
+                    <div class="slider__item_img">
+                        <img class="slider__item_img_logo" src="assets/image4.png" alt="image1">
+                    </div>
+                  <div class="slider_title">
+                      Launch tlt-240 4.0т
+                      220V-380V 1 год гарантии
+                  </div>
+                  <div class="slider_description">
+                    Грузоподъёмность: – 4.0 тонны
+                    Время подъёма на максимальную
+                    высоту: 50 сек
+                    Время опускания: 40 сек
+                    Высота: 3 840 мм
+                    Высота подъема: 1880 мм
+                    Ширина проёма для проезда а/м:
+                    2486мм
+                    Минимальная высота подхватов от
+                    пола: 110 мм
+                    Автоподъемники в цветах: красный,
+                    голубой, серый.
+                </div>
+                  <div class="price">
+                    от 315 000 тенге
+                </div>
+                  </div>
+                  </div>
+                  <div class="slider__item">
+                    <div id="item4" class="slider_it">
+                    <div class="slider__item_img">
+                        <img class="slider__item_img_logo" src="assets/image5.jpg" alt="image1">
+                    </div>
+                  <div class="slider_title">
+                      Launch tlt-240 4.0т
+                      220V-380V 1 год гарантии
+                  </div>
+                  <div class="slider_description">
+                    Грузоподъёмность: – 4.0 тонны
+                    Время подъёма на максимальную
+                    высоту: 50 сек
+                    Время опускания: 40 сек
+                    Высота: 3 840 мм
+                    Высота подъема: 1880 мм
+                    Ширина проёма для проезда а/м:
+                    2486мм
+                    Минимальная высота подхватов от
+                    пола: 110 мм
+                    Автоподъемники в цветах: красный,
+                    голубой, серый.
+                </div>
+                  <div class="price">
+                    от 315 000 тенге
+                </div>
+                  </div>
+                  </div>
+                  <div class="slider__item">
+                    <div id="item5" class="slider_it">
+                    <div class="slider__item_img">
+                        <img class="slider__item_img_logo" src="assets/image1.jpg" alt="image1">
+                    </div>
+                  <div class="slider_title">
+                      Launch tlt-240 4.0т
+                      220V-380V 1 год гарантии
+                  </div>
+                  <div class="slider_description">
+                    Грузоподъёмность: – 4.0 тонны
+                    Время подъёма на максимальную
+                    высоту: 50 сек
+                    Время опускания: 40 сек
+                    Высота: 3 840 мм
+                    Высота подъема: 1880 мм
+                    Ширина проёма для проезда а/м:
+                    2486мм
+                    Минимальная высота подхватов от
+                    пола: 110 мм
+                    Автоподъемники в цветах: красный,
+                    голубой, серый.
+                </div>
+                  <div class="price">
+                    от 315 000 тенге
+                </div>
+                  </div>
+                  </div>
+                  <div class="slider__item">
+                    <div id="item6" class="slider_it">
+                    <div class="slider__item_img">
+                        <img class="slider__item_img_logo" src="assets/image2.jpg" alt="image1">
+                    </div>
+                  <div class="slider_title">
+                      Launch tlt-240 4.0т
+                      220V-380V 1 год гарантии
+                  </div>
+                  <div class="slider_description">
+                    Грузоподъёмность: – 4.0 тонны
+                    Время подъёма на максимальную
+                    высоту: 50 сек
+                    Время опускания: 40 сек
+                    Высота: 3 840 мм
+                    Высота подъема: 1880 мм
+                    Ширина проёма для проезда а/м:
+                    2486мм
+                    Минимальная высота подхватов от
+                    пола: 110 мм
+                    Автоподъемники в цветах: красный,
+                    голубой, серый.
+                </div>
+                  <div class="price">
+                    от 315 000 тенге
+                </div>
+                  </div>
+                  </div>
+                  <div class="slider__item">
+                    <div id="item7" class="slider_it">
+                    <div class="slider__item_img">
+                        <img class="slider__item_img_logo" src="assets/image4.png" alt="image1">
+                    </div>
+                  <div class="slider_title">
+                      Launch tlt-240 4.0т
+                      220V-380V 1 год гарантии
+                  </div>
+                  <div class="slider_description">
+                    Грузоподъёмность: – 4.0 тонны
+                    Время подъёма на максимальную
+                    высоту: 50 сек
+                    Время опускания: 40 сек
+                    Высота: 3 840 мм
+                    Высота подъема: 1880 мм
+                    Ширина проёма для проезда а/м:
+                    2486мм
+                    Минимальная высота подхватов от
+                    пола: 110 мм
+                    Автоподъемники в цветах: красный,
+                    голубой, серый.
+                </div>
+                  <div class="price">
+                    от 315 000 тенге
+                </div>
+                  </div>
+                  </div>
+                </div>
+                <a class="slider__control slider__control_left" href="#" role="button"></a>
+                <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+              </div>            
+        </div>
+    
+        <div id="map" style="width:100%; height:400px"></div>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal_content_div">
+                <div class="modal_img_container">
+                    <img id="modal_img" src=""/>
+                </div>
+                <div>
+                    <p id="modal_title"></p>
+                    <p id="modal_description"></p>
+                    <p id="modal_price"></p>
+                </div>
+            </div>
+            </div>
+          
+          </div>
+    
+    </div>
+</body>
+<script src="js/script1.js"></script>
+<script src="js/script2.js"></script>
+<script src="js/script3.js"></script>
+
+</html>
