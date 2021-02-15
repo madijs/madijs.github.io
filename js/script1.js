@@ -1,90 +1,109 @@
-'use strict';
-            var multiItemSlider = (function () {
-              return function (selector, config) {
-                var
-                  _mainElement = document.querySelector(selector), // основный элемент блока
-                  _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
-                  _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
-                  _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
-                  _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
-                  _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
-                  _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
-                  _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
-                  _positionLeftItem = 0, // позиция левого активного элемента
-                  _transform = 0, // значение транфсофрмации .slider_wrapper
-                  _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
-                  _items = []; // массив элементов
-                // наполнение массива _items
-                _sliderItems.forEach(function (item, index) {
-                  _items.push({ item: item, position: index, transform: 0 });
-                });
-                console.log(_items)
-        
-                var position = {
-                  getMin: 0,
-                  getMax: _items.length - 1,
-                }
-        
-                var _transformItem = function (direction) {
-                  if (direction === 'right') {
-                    if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
-                      return;
-                    }
-                    if (!_sliderControlLeft.classList.contains('slider__control_show')) {
-                      _sliderControlLeft.classList.add('slider__control_show');
-                    }
-                    if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
-                      _sliderControlRight.classList.remove('slider__control_show');
-                    }
-                    _positionLeftItem++;
-                    _transform -= _step;
-                  }
-                  if (direction === 'left') {
-                    if (_positionLeftItem <= position.getMin) {
-                      return;
-                    }
-                    if (!_sliderControlRight.classList.contains('slider__control_show')) {
-                      _sliderControlRight.classList.add('slider__control_show');
-                    }
-                    if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
-                      _sliderControlLeft.classList.remove('slider__control_show');
-                    }
-                    _positionLeftItem--;
-                    _transform += _step;
-                  }
-                  _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
-                }
-        
-                // обработчик события click для кнопок "назад" и "вперед"
-                var _controlClick = function (e) {
-                  if (e.target.classList.contains('slider__control')) {
-                    e.preventDefault();
-                    var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
-                    _transformItem(direction);
-                  }
-                };
-        
-                var _setUpListeners = function () {
-                  // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
-                  _sliderControls.forEach(function (item) {
-                    item.addEventListener('click', _controlClick);
-                  });
-                }
-        
-                // инициализация
-                _setUpListeners();
-        
-                return {
-                  right: function () { // метод right
-                    _transformItem('right');
-                  },
-                  left: function () { // метод left
-                    _transformItem('left');
-                  }
-                }
-        
-              }
-            }());
-        
-            var slider1 = multiItemSlider('.slider')
-            console.log(sl)
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
+
+
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+showSlides2(slideIndex2 += n);
+console.log('qwertyui')
+}
+
+function currentSlide2(n) {
+showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides2");
+let dots = document.getElementsByClassName("dot2");
+if (n > slides.length) {slideIndex2 = 1}    
+if (n < 1) {slideIndex2 = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex2-1].style.display = "block";  
+dots[slideIndex2-1].className += " active";
+}
+
+let slideIndex3 = 1;
+    showSlides3(slideIndex3);
+
+    function plusSlides3(n) {
+    showSlides3(slideIndex3 += n);
+    }
+
+    function currentSlide3(n) {
+    showSlides3(slideIndex3 = n);
+    }
+
+    function showSlides3(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides3");
+    let dots = document.getElementsByClassName("dot3");
+    if (n > slides.length) {slideIndex3 = 1}    
+    if (n < 1) {slideIndex3 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex3-1].style.display = "block";  
+    dots[slideIndex3-1].className += " active";
+    }
+
+    let slideIndex4 = 1;
+    showSlides4(slideIndex4);
+
+    function plusSlides4(n) {
+    showSlides4(slideIndex4 += n);
+    }
+
+    function currentSlide4(n) {
+    showSlides4(slideIndex4 = n);
+    }
+
+    function showSlides4(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides4");
+    let dots = document.getElementsByClassName("dot4");
+    if (n > slides.length) {slideIndex4 = 1}    
+    if (n < 1) {slideIndex4 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex4-1].style.display = "block";  
+    dots[slideIndex4-1].className += " active";
+    }
