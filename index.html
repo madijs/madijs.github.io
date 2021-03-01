@@ -1,0 +1,907 @@
+<html>  
+<head>  
+   <title>Shashlychok</title>  
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="style.css"/>  
+   <script src="https://my.nikah.io/wp-includes/js/slider/siema.min.js"></script>
+
+</head>  
+<body>  
+   <header>
+       <div class="container">
+           <div class="logo_container">
+            <div class="logo"> 
+                <img src="./assets/logo.svg" alt="logo">
+            </div>
+        </div>
+            <div class="titles">
+                <div class="one">Меню</div>
+                <div class="two">Акции</div>
+                <div class="three">Контакты</div>
+                <div class="contact">
+                    +7 (747) 691 47 27
+                </div>
+            </div>
+        
+                    
+            <div id="menuToggle">
+                <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                <ul id="menu">
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Корзина</a></li>
+                    <li><a href="#">Адрес</a></li>
+                </ul>
+            </div> 
+        </div>
+   </header>
+   <div class="content">
+        <div class="carousel">
+            <div class="siema">
+                <div class="siema_banner">
+                    <img src="./assets/banner1.svg" alt="img">
+                </div>
+                <div class="siema_banner">
+                    <img src="./assets/banner1.svg" alt="img">
+                </div>
+                <div class="siema_banner">
+                    <img src="./assets/banner1.svg" alt="img">
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot dot1 active" onclick="changeSlide(0,'dot1')"></span>
+                <span class="dot dot2" onclick="changeSlide(1,'dot2')"></span>
+                <span class="dot dot3" onclick="changeSlide(2,'dot3')"></span>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product_categories">
+                <div class="wrapper_categories">
+                    <div class="categories_list">
+                        <div class="category">
+                            <div class="category_icon">
+                                <img src="./assets/wawlyk.svg" alt="category_img">
+                            </div>
+                            <div class="category_text">
+                                Шашлыки
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="category_icon">
+                                <img src="./assets/drinks.svg" alt="category_img">
+                            </div>
+                            <div class="category_text">
+                                Напитки
+                            </div>
+                        </div>
+                        <div class="category">
+                            <div class="category_icon">
+                                <img src="./assets/ketchup.svg" alt="category_img">
+                            </div>
+                            <div class="category_text">
+                                Экстра
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <div class="cart_icon">
+                                <img src="./assets/cart.svg" alt="cart_img">
+                            </div>
+                            <div class="cart_text">
+                                Корзина
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product_block">
+                <div class="product_block_title">
+                    Шашлыки
+                </div>
+                <div class="product_block_list">
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/wawlyk_image.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_not_available">
+                                    Нет в наличии
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/wawlyk_image.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                                <div class="product_element_counter">
+                                    <div onclick="minus(2)" class="minus">
+                                        <img src="./assets/minus.svg" alt="minus">
+                                    </div>
+                                    <div id="2" class="count">1</div>
+                                    <div onclick="plus(2)" class="plus"><img src="./assets/plus.svg" alt="plus"></div>
+                                </div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_in_cart">
+                                    В корзине
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/wawlyk_image.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img class="hit_img" src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_out_cart">
+                                    В корзину
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/wawlyk_image.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_out_cart">
+                                    В корзину
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/wawlyk_image.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_not_available">
+                                    Нет в наличии
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/wawlyk_image.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                                <div class="product_element_counter">
+                                    <div onclick="minus(2)" class="minus">
+                                        <img src="./assets/minus.svg" alt="minus">
+                                    </div>
+                                    <div id="2" class="count">1</div>
+                                    <div onclick="plus(2)" class="plus"><img src="./assets/plus.svg" alt="plus"></div>
+                                </div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_in_cart">
+                                    В корзине
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/wawlyk_image.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_out_cart">
+                                    В корзину
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/wawlyk_image.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_not_available">
+                                    Нет в наличии
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_block_title">
+                    Напитки
+                </div>
+                <div class="product_block_list">
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/cola.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_not_available">
+                                    Нет в наличии
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/cola.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                                <div class="product_element_counter">
+                                    <div onclick="minus(2)" class="minus">
+                                        <img src="./assets/minus.svg" alt="minus">
+                                    </div>
+                                    <div id="2" class="count">1</div>
+                                    <div onclick="plus(2)" class="plus"><img src="./assets/plus.svg" alt="plus"></div>
+                                </div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_in_cart">
+                                    В корзине
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/cola.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_out_cart">
+                                    В корзину
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/cola.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_out_cart">
+                                    В корзину
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/cola.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_not_available">
+                                    Нет в наличии
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/cola.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                                <div class="product_element_counter">
+                                    <div onclick="minus(2)" class="minus">
+                                        <img src="./assets/minus.svg" alt="minus">
+                                    </div>
+                                    <div id="2" class="count">1</div>
+                                    <div onclick="plus(2)" class="plus"><img src="./assets/plus.svg" alt="plus"></div>
+                                </div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_in_cart">
+                                    В корзине
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/cola.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_out_cart">
+                                    В корзину
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/cola.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_not_available">
+                                    Нет в наличии
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_block_title">
+                    Экстра
+                </div>
+                <div class="product_block_list">
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/sous.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_not_available">
+                                    Нет в наличии
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/sous.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                                <div class="product_element_counter">
+                                    <div onclick="minus(2)" class="minus">
+                                        <img src="./assets/minus.svg" alt="minus">
+                                    </div>
+                                    <div id="2" class="count">1</div>
+                                    <div onclick="plus(2)" class="plus"><img src="./assets/plus.svg" alt="plus"></div>
+                                </div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_in_cart">
+                                    В корзине
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/sous.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_out_cart">
+                                    В корзину
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/sous.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_out_cart">
+                                    В корзину
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/sous.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_not_available">
+                                    Нет в наличии
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/sous.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                                <div class="product_element_counter">
+                                    <div onclick="minus(2)" class="minus">
+                                        <img src="./assets/minus.svg" alt="minus">
+                                    </div>
+                                    <div id="2" class="count">1</div>
+                                    <div onclick="plus(2)" class="plus"><img src="./assets/plus.svg" alt="plus"></div>
+                                </div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_in_cart">
+                                    В корзине
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/sous.svg" alt="product_img">
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_out_cart">
+                                    В корзину
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_element">
+                        <div class="product_element_image">
+                            <img src="./assets/sous.svg" alt="product_img">
+                            <div class="hit">
+                                <div class="icon">
+                                    <img src="./assets/percik.svg" alt="hit_icon">
+                                </div>
+                                <div class="hit_txt">
+                                    ХИТ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_element_content">
+                            <div class="product_element_header">
+                                <div class="product_element_title">Баранина</div>
+                            </div>
+                            <div class="product_element_description">
+                                Шашлык из самой сочной  
+                                и вкусной баранины
+                            </div>   
+                            <div class="product_element_footer">
+                                <div class="product_element_footer_price">1100тг</div>
+                                <div class="product_element_footer_btn product_not_available">
+                                    Нет в наличии
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="address">
+            <div class="address_text">
+                <div class="addres_item">
+                    <div class="address_marker_icon">
+                        <img src="./assets/marker.svg" alt="marker">
+                    </div>
+                    <div class="address_marker_text">
+                        г.Нур-Султан, ул.Едил 26, 
+                        на территории Magnum Cash&Carry
+                    </div>
+                </div>
+                <div class="addres_item">
+                    <div class="address_marker_icon">
+                        <img src="./assets/marker.svg" alt="marker">
+                    </div>
+                    <div class="address_marker_text">
+                        г. Нур-Султан, пр. Нургисы Тлендиева, 15 на территории ТЦ Рахмет
+                    </div>
+                </div>
+                <div class="addres_item">
+                    <div class="address_marker_icon">
+                        <img src="./assets/marker.svg" alt="marker">
+                    </div>
+                    <div class="address_marker_text">
+                        г. Нур-Султан, пр. Абая, 48/1a на территории ТЦ Жаннур
+                    </div>
+                </div>
+                <div class="addres_item">
+                    <div class="address_marker_icon">
+                        <img src="./assets/marker.svg" alt="marker">
+                    </div>
+                    <div class="address_marker_text">
+                        г. Нур-Султан, пр. Абая, 48/1a на территории ТЦ Жаннур
+                    </div>
+                </div>
+            </div>
+            <div class="address_map">
+
+            </div>
+        </div>
+        <footer>
+            <div class="footer_header">
+                <div class="footer_head">
+                <div class="footer_icon">
+                    <img src="./assets/logo.svg" alt="logo">
+                </div>
+                <div class="footer_block">
+                    <div class="footer_block_title">Самовызов</div>
+                    <div class="footer_block_desc">
+                        <div class="footer_block_description">
+                            <div class="footer_block_description_icon">
+                                <img src="./assets/clock.svg" alt="logo">
+                            </div>
+                            <div class="footer_block_description_text">
+                                11.00 - 22.00
+                            </div>
+                        </div>
+                        <div class="footer_block_description">
+                            <div class="footer_block_description_icon">
+                                <img src="./assets/call.svg" alt="logo">
+                            </div>
+                            <div class="footer_block_description_text">
+                                +7 (708) 508 42 42
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_block">
+                    <div class="footer_block_title">Доставка</div>
+                    <div class="footer_block_desc">
+                        <div class="footer_block_description">
+                            <div class="footer_block_description_icon">
+                                <img src="./assets/clock.svg" alt="logo">
+                            </div>
+                            <div class="footer_block_description_text">
+                                11.00 - 22.00
+                            </div>
+                        </div>
+                        <div class="footer_block_description">
+                            <div class="footer_block_description_icon">
+                                <img src="./assets/call.svg" alt="logo">
+                            </div>
+                            <div class="footer_block_description_text">
+                                +7 (747) 691 47 27
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_block">
+                    <div class="footer_block_title">Мы в соц. сетях</div>
+                    <div class="footer_block_desc">
+                        <div class="footer_block_description">
+                            <div class="footer_block_description_icon">
+                                <img src="./assets/instagram.svg" alt="logo">
+                            </div>
+                            <div class="footer_block_description_text">
+                                @shashlychok01
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="footer_footer">
+                Все права защищены 2021.
+            </div>
+        </footer>
+   </div>
+   <script src="siema.min.js"></script>
+    <script>
+
+        function printSlideIndex() {
+            let dots = document.getElementsByClassName('dot')
+            dots[this.currentSlide].className+=" active"
+            console.log(this.currentSlide)
+
+            for(let i=0;i<dots.length;i++){    
+                if(i !== this.currentSlide){
+                    dots[i].className = dots[i].className.replace(" active","")
+                }
+            }
+        }
+        const mySiema = new Siema({
+            selector: '.siema',
+            duration: 200,
+            easing: 'ease-out',
+            perPage: 1,
+            startIndex: 0,
+            draggable: true,
+            multipleDrag: true,
+            threshold: 20,
+            loop: false,
+            rtl: false,
+            onInit: printSlideIndex,
+            onChange: printSlideIndex,
+        });
+
+        
+        function changeSlide(n,className){
+            let i;
+            let dots = document.getElementsByClassName('dot')
+            let dot = document.getElementsByClassName(`${className}`)
+
+            for(let i=0;i<dots.length;i++){    
+                if(dots[i].className !== dot[0].className){
+                    dots[i].className = dots[i].className.replace(" active","")
+                }
+            }
+
+            dot[0].className +=" active"
+            mySiema.goTo(n)
+        }
+    </script>
+    <script>
+            function plus(productId){
+                let countEl = document.getElementById(productId);
+                let count = parseInt(countEl.innerHTML)
+                count++;
+                countEl.innerHTML = count;
+                // count++;
+                // countEl.value = count;
+            }
+            function minus(productId){
+                let countEl = document.getElementById(productId);
+                let count = parseInt(countEl.innerHTML)
+                if (count > 1) {
+                    count--;
+                    countEl.innerHTML = count;
+                }  
+            }
+    </script>
+</body>  
+
+</html>  
